@@ -1,6 +1,8 @@
 import React from 'react';
 import '../assets/styles/components/Home.scss'
 import temp from '../assets/atom.png'
+import CardTrend from './CardTrend';
+import Results from './Results';
 
 const Home = () => {
     return (
@@ -8,7 +10,8 @@ const Home = () => {
         <nav className="navbar">
             <img className="logo" src={temp} alt="logo"/>
             <h1 className="brand" >Brand Name</h1>
-            <h1 className="language" >ES </h1>
+            <p className="loginlink" >Inicia sesión</p>
+            <h3 className="language" >ES </h3>
 
         </nav>
         <div className="search">
@@ -17,14 +20,18 @@ const Home = () => {
             <button className="searchBtn" >🔍</button>
             <hr/>
         </div>
-        <div className="results">
-            <h1>Estos van a a ser resultados</h1>
-            <h1>Estos van a a ser resultados</h1>
-            <h1>Estos van a a ser resultados</h1>
-            <h1>Estos van a a ser resultados</h1>
-            <h1>Estos van a a ser resultados</h1>
-            <h1>Estos van a a ser resultados</h1>
-            <h1>Estos van a a ser resultados</h1>
+        <div className="container">
+            <div className="results">
+                <Results />
+                <Results />
+                <Results />
+                <Results />
+            </div>
+            <div className="trends">
+                <CardTrend />
+                <CardTrend />
+                <CardTrend />
+            </div>
         </div>
     </>
     )

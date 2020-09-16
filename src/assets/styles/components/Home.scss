@@ -1,5 +1,10 @@
 $mainColor : #ff3459;
 
+%headerLocation {
+    position: relative;
+    top: -18px;
+    display: inline-block;
+}
 
 .navbar {
     background: $mainColor;
@@ -10,16 +15,16 @@ $mainColor : #ff3459;
         margin: 3px 20px;
     }
     .brand {
-        position: relative;
-        top: -18px;
-        display: inline-block;
+        @extend %headerLocation;
         margin-left: 1%;
-        width: 85%;
+        width: 80%;
+    }
+    .loginlink {
+        @extend %headerLocation;
+        margin: 0 20px;
     }
     .language{
-        position: relative;
-        top: -18px;
-        display: inline-block;
+        @extend %headerLocation;
         margin: 0;
     }
 }
@@ -27,13 +32,14 @@ $mainColor : #ff3459;
     text-align: center;
     .searchText {
         letter-spacing: 2px;
+        margin-top: 10px;
     }
     .searchBar {
         width: 600px;
         text-align: center;
         border-radius: 5px;
         margin-bottom: 10px;
-        color: white;
+        color:black;
     }
     .searchBtn {
         position: relative;
@@ -45,10 +51,21 @@ $mainColor : #ff3459;
         background: $mainColor;
     }
 }
-.results {
+.container {
     margin: 0 auto;
     width: 80%;
-    text-align: center;
-    border: 1px solid black;
-    border-top:none;
+    border-right: 1px solid black;
+    height: 70vh;
+
+    .results {
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+        border: 1px solid black;
+        border-top:none;
+    }
+    .trends {
+        display: inline-block;
+        width: 19.8%;
+    }
 }

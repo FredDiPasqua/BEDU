@@ -1,0 +1,19 @@
+.cardTrend {
+    display: block;
+    margin: 0;
+    border: 1px solid red;
+    width: 100%;;
+    img {
+        width: 150px;
+    }
+    h5 {
+        margin: 0;
+        color: white;
+        background-color: rgba(0,0,0,.3);
+        position: relative;
+        top: -20px;
+    }
+    p {
+        margin: 0;
+    }
+}
