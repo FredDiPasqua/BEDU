@@ -6,6 +6,7 @@ import Results from './Results';
 import LogIn from './LogIn'
 
 const Home = () => {
+    let modal = true
 
     const handleModal = () => {
         if (modal) {
