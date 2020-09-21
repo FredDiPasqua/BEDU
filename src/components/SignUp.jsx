@@ -14,6 +14,20 @@ const SignUp = () => {
                     password: '',
                     passwordverification: ''
                 }}
+                validationSchema={Yup.object({
+                    name: Yup.string()
+                        .required('Required'),
+                    lastname: Yup.string()
+                        .required('Required'),
+                    user: Yup.string()
+                        .min(3, 'Necesita contener al menos 3 caracteres')
+                        .max(15, 'maximo son 15 caracteres')
+                        .required('Required'),
+                    email: Yup.string()
+                        .email('El email es invalido')
+                        .required('Required')
+
+                })}
         />
     )
 };
