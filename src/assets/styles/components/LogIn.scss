@@ -1,0 +1,48 @@
+
+
+.form {
+
+    .p {
+        margin: 20px 0px 0px 0px;
+    }
+    .inputs {
+        display: block;
+        margin: 5px auto;
+    }
+    .submitBtn {
+        margin: 18px 0 20px 0;
+        background-color:  #ff3459;
+        color: whitesmoke;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        width: 90px;
+    }
+    .passwordRecovery {
+        font-size: 11px;
+        width: 130px;
+        margin: 0 auto;
+    }
+    .passwordRecovery:hover {
+        color: #ff3459;
+        text-decoration: underline;
+        font-size: 14px;
+
+    }
+
+}
+
+
+.createAccount {
+    width: 160px;
+    margin: 0 0 0 auto;
+    // text-align: end;
+
+}
+.createAccount:hover {
+    color: #ff3459;
+    text-decoration: underline;
+    font-size: 20px;
+    
+
+}
