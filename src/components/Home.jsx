@@ -3,14 +3,26 @@ import '../assets/styles/components/Home.scss'
 import temp from '../assets/atom.png'
 import CardTrend from './CardTrend';
 import Results from './Results';
+import LogIn from './LogIn'
 
 const Home = () => {
+
+    const handleModal = () => {
+        if (modal) {
+            modal = false
+        }
+        else {
+            modal = true
+        }
+    }
+
     return (
     <>
         <nav className="navbar">
             <img className="logo" src={temp} alt="logo"/>
             <h1 className="brand" >Brand Name</h1>
-            <p className="loginlink" >Inicia sesión</p>
+            <button className="loginlink" onClick={handleModal} >Inicia sesión</button>
+            <LogIn isOpen={modal} onClose={handleModal} >Aqui va el contenido </LogIn>
             <h3 className="language" >ES </h3>
 
         </nav>
